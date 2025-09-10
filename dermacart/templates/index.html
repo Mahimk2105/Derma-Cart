@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h2 id="formTitle">Login</h2>
+    <form id="authForm">
+      <div id="signupFields" class="hidden">
+        <input type="text" placeholder="Name" id="name">
+        <input type="text" placeholder="Surname" id="surname">
+        <input type="date" id="dob">
+      </div>
+      <input type="text" placeholder="Username" id="username" required>
+      <input type="password" placeholder="Set Password" id="password" required>
+      <input type="password" placeholder="Confirm Password" id="confirmPassword" class="hidden">
+      
+      <label class="checkbox">
+        <input type="checkbox" id="robotCheck"> I'm not a robot
+      </label>
+
+      <button type="submit" id="submitBtn">Login</button>
+    </form>
+
+    <p>
+      <span id="toggleText">Don't have an account?</span>
+      <a href="#" id="toggleLink">Sign up</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
